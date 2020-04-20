@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SKUY-Movies</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <header class="menu-container">
+        <app-header></app-header>
+        <div class="header-right">
+            <div class="menu">
+                <div class="header-left-mobile" style="margin-top: 7px;">
+                    <img src="./assets/img/log1.png" alt="" style="height: 40px; width: 150px;">
+                </div>
+                <ul class="clearfix col-lg-9 col-xl-6" style="margin: 0; padding: 0; float: right;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">More</a>
+                        <ul>
+                            <li><a href="#toprated">Top Rated</a></li>
+                            <li><a href="#upcoming">Upcoming</a></li>
+                            <li><a href="#popular">Popular</a></li>
+                            <li><a href="#latest">Latest</a></li>
+                          </ul>
+                    </li> 
+                    <li><a href="#next_try_with_php">Login</a></li> 
+                    <li><a href="../src/search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>   
+    </header>
+    <div class="img-fluid">
+        <img src="assets/img/banner.png" alt="">
+    </div> 
+    <main class="container-fluid">
+        <a name="toprated">
+            <h2 class="mt-5 judul-utama" style="font-weight: bold;">Top Rated Movies</h2>
+            <hr class="garis-divider-d w-100-divide" style="border: 1px solid blue; float: left; margin: 0;" >
+            <div class="scrolling-wrapper-syam row flex-row flex-nowrap" style="padding:0; margin-top:30px;" id="movie1">
+            </div>
+        </a>
+        <br>
+        <a name="upcoming">
+            <h2 class="mt-5 judul-utama" style="font-weight: bold;">Upcoming Movies</h2>
+            <hr class="garis-divider-d w-100-divide" style="border: 1px solid blue; float: left; margin: 0;">
+            <div class="scrolling-wrapper-syam row flex-row flex-nowrap" style="padding:0; margin-top:30px;" id="movie2"></div>
+        </a>
+        <br>
+        <a name="popular">
+            <h2 class="mt-5 judul-utama" style="font-weight: bold;">Popular Movies</h2>
+            <hr class="garis-divider-d w-100-divide" style="border: 1px solid blue; float: left; margin: 0;">
+            <div class="scrolling-wrapper-syam row flex-row flex-nowrap" style="padding:0; margin-top:30px;" id="movie3"></div>
+        </a>
+        <br>
+        <a name="latest">
+            <h2 class="mt-5 judul-utama" style="font-weight: bold;">Latest Movies</h2>
+            <hr class="garis-divider-d w-100-divide" style="border: 1px solid blue; float: left; margin: 0;">
+            <div class="scrolling-wrapper-syam row flex-row flex-nowrap" style="padding:0; margin-top:30px;" id="movie4"></div>
+        </a>
+        <br>
+        <div id="popup">
+            <div class="window">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-3 img-mobile">
+                            <div class="card card-image-detail">
+                                <div id="hasil-output"></div>
+                                <span style="color:cyan; float: left; text-align: left;">Rating :<span>
+                                <span class="progress" id="rate" style="margin-bottom:10px;">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-8">
+                            <table>
+                                <tr>
+                                    <td><p id="title"></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="genre" style="color:white;"></p><p id="date" style="color:white;"></p>
+                                        <p id="tag" style="color:white;"><br></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="over-v">Over View</span><br>
+                                        <span id="overv" style="color:white;"></span><span style="color:cyan;  float: left; text-align: left; margin-top:15px;" class="hide rates">Rating : <div id="ratem" class="hide rates"></div>%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <br>
+                                        <table class="table2">
+                                            <tr>
+                                                <td style="color: cyan;">Production Country</td>
+                                                <td style="color: cyan;">Production Companies</td>
+                                                <td style="color: cyan;">Movie Trailer</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: white;"><p id="country" style="margin-top: 15px;"></p></td>
+                                                <td style="color: white;"><p id="pro" style="margin-top: 15px;"></p></td>
+                                                <td style="color: white;"><div id="video"></div></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="close"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="./dist/build.js"></script> -->
+    <script type="text/javascript" src="bundle.js"></script></body>
+    <script src="../src/scripts/detail.js"></script>
+    <footer class="footer">
+        <app-footer></app-footer>
+    </footer>
+</html>

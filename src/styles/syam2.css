@@ -1,0 +1,92 @@
+.header-left img{
+    margin:10px 40px 16px 50px;
+    background-size: cover;
+}
+
+ul > li > a{
+    font-weight: bold;
+}
+
+.top-wrapper{
+    padding:180px 0px 100px 0px;
+    color:white;
+    height: 643px;
+    background-image:url(../component/banner.png);
+    background-size:cover;
+}
+
+.container{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.col-lg-3 img{
+    width: 50%;
+    height: auto;
+}
+
+.col-lg-7 .judul{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.col-lg-7 .desc{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.form-search{
+    color: darkblue;
+    height:50px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    text-decoration-color: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    padding: 0px 0px 0px 50px;
+    border: none;
+    outline-color: none;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    outline-color: transparent;
+}
+
+
+.card-s-2{
+    width: 100%;
+    box-shadow: 3px 3px 0px #b4b4b4;
+}
+
+.card-s-2:active{
+    box-shadow: none;
+}
+
+.card-s-2:hover{
+    box-shadow: 10px 10px 10px #b4b4b4;
+}
+
+@media screen and (max-width: 768px) {
+    .col-lg-1{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .col-lg-3 {
+        text-align: center;
+    }
+
+    .judul{
+        text-align: center;
+    }
+    
+    
+}
