@@ -1,4 +1,5 @@
 # SkuyMovies
+Web Informasi movies berdasarkan TMDB API dengan java native dan workbox
 
 # Penggunaan
 Jika sudah di clone, maka untuk menjalankan program ini, Anda harus menginstall npm(node package manager) terlebih dahulu, berikut link download nya  https://nodejs.org/
